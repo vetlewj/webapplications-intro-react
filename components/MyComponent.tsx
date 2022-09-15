@@ -9,8 +9,9 @@ export default function MyComponent(props: MyComponentProps) {
   const { title } = props;
   return (
     <>
-      <h1>My First Component</h1>
       <Wrapper>
+        <h1>My First Component</h1>
+
         <Title title={title} />
       </Wrapper>
     </>

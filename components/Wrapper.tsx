@@ -4,5 +4,5 @@ type WrapperProps = {
 
 export default function Wrapper(props: WrapperProps) {
   const { children } = props;
-  return <section>{children}</section>;
+  return <section className='flex'>{children}</section>;
 }
