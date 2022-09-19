@@ -10,6 +10,7 @@ const Home: NextPage = () => {
       <MyComponent title='It still works' />
       <Food food={food} />
       <button onClick={() => console.log('clicked')}></button>
+      <input type='text' onChange={() => console.log('change')} />
     </>
   );
 };
