@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     <>
       <MyComponent title='It still works' />
       <Food food={food} />
-      <button onClick={() => console.log('clicked')}></button>
+      <button onClick={() => console.log(input)}></button>
       <input
         type='text'
         value={input}
