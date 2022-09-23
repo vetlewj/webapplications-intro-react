@@ -1,9 +1,17 @@
 import { useState } from 'react';
 
-export default function Alert({ input, setInput }: any) {
+export default function Alert({
+  input,
+  setInput,
+  isClicked,
+  setIsClicked,
+}: any) {
   return (
     <>
-      <button className='alertbtn' onClick={() => alert(input)}></button>
+      <button
+        className='alertbtn'
+        onClick={(event) => setIsClicked(!isClicked)}
+      ></button>
       <input
         type='text'
         value={input}

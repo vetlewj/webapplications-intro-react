@@ -8,12 +8,18 @@ const food = ['Pizza', 'Hamburger', 'Coke'];
 
 const Home: NextPage = () => {
   const [inputValue, setInputValue] = useState('');
+  const [isClicked, setIsClicked] = useState(false);
   return (
     <>
       <MyComponent title='It still works' />
       <Food food={food} />
-      <Alert input={inputValue} setInput={setInputValue} />
-      <p>{inputValue}</p>
+      <Alert
+        input={inputValue}
+        setInput={setInputValue}
+        isClicked={isClicked}
+        setIsClicked={setIsClicked}
+      />
+      {isClicked ? <p>{inputValue}</p> : null}
     </>
   );
 };
