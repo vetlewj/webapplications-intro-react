@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-export default function Alert() {
-  const [input, setInput] = useState('');
+export default function Alert({ input, setInput }: any) {
   return (
     <>
       <button className='alertbtn' onClick={() => alert(input)}></button>
